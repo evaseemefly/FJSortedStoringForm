@@ -1,0 +1,8 @@
+E:\03协同开发\福建省分类存储\SortedStoringForm\SortedStoringForm\bin\Debug\SortedStoringForm.exe
+E:\03协同开发\福建省分类存储\SortedStoringForm\SortedStoringForm\bin\Debug\SortedStoringForm.pdb
+E:\03协同开发\福建省分类存储\SortedStoringForm\SortedStoringForm\obj\Debug\SortedStoringForm.csprojResolveAssemblyReference.cache
+E:\03协同开发\福建省分类存储\SortedStoringForm\SortedStoringForm\obj\Debug\SortedStoringForm.Form1.resources
+E:\03协同开发\福建省分类存储\SortedStoringForm\SortedStoringForm\obj\Debug\SortedStoringForm.Properties.Resources.resources
+E:\03协同开发\福建省分类存储\SortedStoringForm\SortedStoringForm\obj\Debug\SortedStoringForm.csproj.GenerateResource.Cache
+E:\03协同开发\福建省分类存储\SortedStoringForm\SortedStoringForm\obj\Debug\SortedStoringForm.exe
+E:\03协同开发\福建省分类存储\SortedStoringForm\SortedStoringForm\obj\Debug\SortedStoringForm.pdb
