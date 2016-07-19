@@ -1,0 +1,8 @@
+E:\360data\重要数据\我的文档\Visual Studio 2005\Projects\FileEventWatcher\FileEventWatcher\obj\Debug\ResolveAssemblyReference.cache
+E:\360data\重要数据\我的文档\Visual Studio 2005\Projects\FileEventWatcher\FileEventWatcher\obj\Debug\FileEventWatcher.fileSystemWatcherFrm.resources
+E:\360data\重要数据\我的文档\Visual Studio 2005\Projects\FileEventWatcher\FileEventWatcher\obj\Debug\FileEventWatcher.Properties.Resources.resources
+E:\360data\重要数据\我的文档\Visual Studio 2005\Projects\FileEventWatcher\FileEventWatcher\obj\Debug\FileEventWatcher.csproj.GenerateResource.Cache
+E:\360data\重要数据\我的文档\Visual Studio 2005\Projects\FileEventWatcher\FileEventWatcher\bin\Debug\FileEventWatcher.exe
+E:\360data\重要数据\我的文档\Visual Studio 2005\Projects\FileEventWatcher\FileEventWatcher\bin\Debug\FileEventWatcher.pdb
+E:\360data\重要数据\我的文档\Visual Studio 2005\Projects\FileEventWatcher\FileEventWatcher\obj\Debug\FileEventWatcher.exe
+E:\360data\重要数据\我的文档\Visual Studio 2005\Projects\FileEventWatcher\FileEventWatcher\obj\Debug\FileEventWatcher.pdb

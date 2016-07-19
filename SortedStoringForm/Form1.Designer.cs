@@ -38,6 +38,9 @@
             this.SubTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.belongType = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.toolStripComboBox1 = new System.Windows.Forms.ToolStripComboBox();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripTextBox1 = new System.Windows.Forms.ToolStripTextBox();
             this.menuStrip1.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -47,10 +50,13 @@
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.菜单ToolStripMenuItem});
+            this.菜单ToolStripMenuItem,
+            this.toolStripComboBox1,
+            this.toolStripMenuItem1,
+            this.toolStripTextBox1});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(755, 25);
+            this.menuStrip1.Size = new System.Drawing.Size(755, 29);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -68,6 +74,7 @@
             this.系统设置ToolStripMenuItem.Name = "系统设置ToolStripMenuItem";
             this.系统设置ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.系统设置ToolStripMenuItem.Text = "系统设置";
+            this.系统设置ToolStripMenuItem.Click += new System.EventHandler(this.系统设置ToolStripMenuItem_Click);
             // 
             // 退出ToolStripMenuItem
             // 
@@ -80,9 +87,9 @@
             this.flowLayoutPanel1.Controls.Add(this.dataGridView1);
             this.flowLayoutPanel1.Controls.Add(this.dataGridView2);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 25);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 29);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(755, 448);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(755, 444);
             this.flowLayoutPanel1.TabIndex = 1;
             // 
             // dataGridView1
@@ -125,6 +132,23 @@
             this.dataGridView2.Size = new System.Drawing.Size(752, 171);
             this.dataGridView2.TabIndex = 1;
             // 
+            // toolStripComboBox1
+            // 
+            this.toolStripComboBox1.Name = "toolStripComboBox1";
+            this.toolStripComboBox1.Size = new System.Drawing.Size(121, 25);
+            // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(136, 25);
+            this.toolStripMenuItem1.Text = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
+            // 
+            // toolStripTextBox1
+            // 
+            this.toolStripTextBox1.Name = "toolStripTextBox1";
+            this.toolStripTextBox1.Size = new System.Drawing.Size(100, 25);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -157,6 +181,9 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn SubTime;
         private System.Windows.Forms.DataGridViewTextBoxColumn belongType;
         private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.ToolStripComboBox toolStripComboBox1;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
+        private System.Windows.Forms.ToolStripTextBox toolStripTextBox1;
     }
 }
 

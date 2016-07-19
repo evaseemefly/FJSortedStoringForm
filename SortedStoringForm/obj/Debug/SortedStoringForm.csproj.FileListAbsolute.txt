@@ -6,3 +6,5 @@ E:\03协同开发\福建省分类存储\SortedStoringForm\SortedStoringForm\obj\
 E:\03协同开发\福建省分类存储\SortedStoringForm\SortedStoringForm\obj\Debug\SortedStoringForm.csproj.GenerateResource.Cache
 E:\03协同开发\福建省分类存储\SortedStoringForm\SortedStoringForm\obj\Debug\SortedStoringForm.exe
 E:\03协同开发\福建省分类存储\SortedStoringForm\SortedStoringForm\obj\Debug\SortedStoringForm.pdb
+D:\01编程\02协作开发\福建省\FJSortedStoringForm\SortedStoringForm\obj\Debug\SortedStoringForm.exe
+D:\01编程\02协作开发\福建省\FJSortedStoringForm\SortedStoringForm\obj\Debug\SortedStoringForm.pdb
