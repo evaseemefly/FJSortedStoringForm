@@ -1,0 +1,5 @@
+E:\03协同开发\福建省分类存储\SortedStoringForm\IOHelper\bin\Debug\IOHelper.dll
+E:\03协同开发\福建省分类存储\SortedStoringForm\IOHelper\bin\Debug\IOHelper.pdb
+E:\03协同开发\福建省分类存储\SortedStoringForm\IOHelper\obj\Debug\IOHelper.csprojResolveAssemblyReference.cache
+E:\03协同开发\福建省分类存储\SortedStoringForm\IOHelper\obj\Debug\IOHelper.dll
+E:\03协同开发\福建省分类存储\SortedStoringForm\IOHelper\obj\Debug\IOHelper.pdb

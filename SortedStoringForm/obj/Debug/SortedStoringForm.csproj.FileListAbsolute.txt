@@ -8,3 +8,10 @@ E:\03协同开发\福建省分类存储\SortedStoringForm\SortedStoringForm\obj\
 E:\03协同开发\福建省分类存储\SortedStoringForm\SortedStoringForm\obj\Debug\SortedStoringForm.pdb
 D:\01编程\02协作开发\福建省\FJSortedStoringForm\SortedStoringForm\obj\Debug\SortedStoringForm.exe
 D:\01编程\02协作开发\福建省\FJSortedStoringForm\SortedStoringForm\obj\Debug\SortedStoringForm.pdb
+E:\03协同开发\福建省分类存储\SortedStoringForm\SortedStoringForm\bin\Debug\Model.dll
+E:\03协同开发\福建省分类存储\SortedStoringForm\SortedStoringForm\bin\Debug\Model.pdb
+E:\03协同开发\福建省分类存储\SortedStoringForm\SortedStoringForm\obj\Debug\SortedStoringForm.SettingForm.resources
+E:\03协同开发\福建省分类存储\SortedStoringForm\SortedStoringForm\bin\Debug\IOHelper.dll
+E:\03协同开发\福建省分类存储\SortedStoringForm\SortedStoringForm\bin\Debug\IOHelper.pdb
+E:\03协同开发\福建省分类存储\SortedStoringForm\SortedStoringForm\bin\Debug\Common.dll
+E:\03协同开发\福建省分类存储\SortedStoringForm\SortedStoringForm\bin\Debug\Common.pdb

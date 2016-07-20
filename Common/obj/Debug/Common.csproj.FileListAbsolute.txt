@@ -1,0 +1,7 @@
+E:\03协同开发\福建省分类存储\SortedStoringForm\Common\bin\Debug\Common.dll
+E:\03协同开发\福建省分类存储\SortedStoringForm\Common\bin\Debug\Common.pdb
+E:\03协同开发\福建省分类存储\SortedStoringForm\Common\bin\Debug\Model.dll
+E:\03协同开发\福建省分类存储\SortedStoringForm\Common\bin\Debug\Model.pdb
+E:\03协同开发\福建省分类存储\SortedStoringForm\Common\obj\Debug\Common.csprojResolveAssemblyReference.cache
+E:\03协同开发\福建省分类存储\SortedStoringForm\Common\obj\Debug\Common.dll
+E:\03协同开发\福建省分类存储\SortedStoringForm\Common\obj\Debug\Common.pdb
