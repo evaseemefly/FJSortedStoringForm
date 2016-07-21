@@ -27,10 +27,9 @@ namespace DAL
                 else
                 {
                     isOk = false;
-                }
-                
-
+                }     
             }
+            base.DelFile(fileInfo);
             return isOk;
         }
 

@@ -39,8 +39,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CopyPathInfo.cs" />
     <Compile Include="DataTypeInfo.cs" />
     <Compile Include="Dictionary\DataTypeDictonary.cs" />
+    <Compile Include="Enum\CopyTypeEnum.cs" />
     <Compile Include="SourceFileInfo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

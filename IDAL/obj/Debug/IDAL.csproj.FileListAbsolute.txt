@@ -1,0 +1,7 @@
+E:\03协同开发\福建省分类存储\SortedStoringForm\IDAL\bin\Debug\IDAL.dll
+E:\03协同开发\福建省分类存储\SortedStoringForm\IDAL\bin\Debug\IDAL.pdb
+E:\03协同开发\福建省分类存储\SortedStoringForm\IDAL\bin\Debug\Model.dll
+E:\03协同开发\福建省分类存储\SortedStoringForm\IDAL\bin\Debug\Model.pdb
+E:\03协同开发\福建省分类存储\SortedStoringForm\IDAL\obj\Debug\IDAL.csprojResolveAssemblyReference.cache
+E:\03协同开发\福建省分类存储\SortedStoringForm\IDAL\obj\Debug\IDAL.dll
+E:\03协同开发\福建省分类存储\SortedStoringForm\IDAL\obj\Debug\IDAL.pdb

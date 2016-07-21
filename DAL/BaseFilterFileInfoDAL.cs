@@ -17,7 +17,7 @@ namespace DAL
         /// <param name="name"></param>
         /// <param name="filter"></param>
         /// <returns></returns>
-        public bool FilterByCondition(string name,string filter)
+        public bool FilterNameByCondition(string name,string filter)
         {
             Regex regex = new Regex(filter);
             Match match = regex.Match(name);
@@ -42,5 +42,15 @@ namespace DAL
             return IOHelper.FileHelper.Copy(fileInfo.FileName, fileInfo.SourcePath, path);
         }
 
+        /// <summary>
+        /// 根据文件对象执行删除操作
+        /// </summary>
+        /// <param name="fileInfo"></param>
+        /// <returns></returns>
+        public bool DelFile(SourceFileInfo fileInfo)
+        {
+            return IOHelper.FileHelper.DelFile(fileInfo.FileName, fileInfo.SourcePath);
+        }
+        
     }
 }

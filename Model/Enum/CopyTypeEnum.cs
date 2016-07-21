@@ -2,12 +2,12 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.IO;
 
-namespace BLL
+namespace Model.Enum
 {
-    public class FilterFileInfoBLL
+    public enum CopyTypeEnum
     {
-        
+        Simple,
+        Complex
     }
 }

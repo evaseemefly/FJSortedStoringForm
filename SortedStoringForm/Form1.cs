@@ -52,17 +52,25 @@ namespace SortedStoringForm
             //1 执行分类操作
             //1.1 获取文件名
             string fileName = e.Name;
+            
             string pattern=filter;
+            FileInfo file = new FileInfo(Path.Combine(watcherPath, fileName));            
+            var date = file.CreationTime;
+            var file_model = new SourceFileInfo()
+            {
+                FileName = e.Name,
+                SourcePath = watcherPath,
+                SubTime = date,
+                TypeCode = 1
+            };
+            var copy_model = new CopyPathInfo()
+            {
+                PrefixName = "",
+            };
             //1.2 对文件名进行筛查
             FileHelper.Copy(fileName, watcherPath, targetPath);
 
-            AddInfo2Lv(new SourceFileInfo()
-            {
-                FileName = fileName,
-                SourcePath = watcherPath,
-                SubTime = DateTime.Now,
-                TypeCode = 1
-            });
+            AddInfo2Lv(file_model);
         }
 
         private void RemoveInfoFromListView()
@@ -163,7 +171,7 @@ namespace SortedStoringForm
         private void 测试ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             XmlHelper.ReadPath(@"E:\03协同开发\福建省分类存储\SortedStoringForm\SortedStoringForm\config.xml");
-            XmlHelper.ReadXml2Str(); 
+            XmlHelper.ReadXml2DataTypeInfo(); 
         }
     }
 }
