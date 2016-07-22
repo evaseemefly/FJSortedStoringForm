@@ -21,24 +21,19 @@ namespace Common
 
         public static void ReadPath(string path)
         {
-            readPath = path;
+            
         }
 
         /// <summary>
         /// 从xml文档中读取数据并转换为DataType集合
         /// </summary>
         /// <returns></returns>
-        public static List<DataTypeInfo> ReadXml2DataTypeInfo()
+        public static List<DataTypeInfo> ReadXml2DataTypeInfo(string path)
         {
+            readPath = path;
             //从指定路径读取xml文件
             XDocument doc = XDocument.Load(readPath);
-            //var t = from s in doc.Descendants()
-            //        select new
-            //        {
-            //            code=s.Element("name").Value,
-            //            rule=s.Element("rule").Value
-            //        };
-            //可以取出type的对象
+            
             var t = from s in doc.Descendants("type")
                     select s;
 
@@ -49,15 +44,32 @@ namespace Common
                           TypeName = s.Element("name").Value,
                           TypeRule=s.Element("rule").Value
                      };
-            //var t = from s in doc.Descendants("type").Attributes("name")
-            //        select s;
-            //foreach (var item in t2)
-            //{
-            //    Console.WriteLine(item);
-            //}
-                    
+                                
             return typeInfos.ToList();
 
+        }
+
+        public static CopyPathInfo ReadXml2CopyPathInfo(string path)
+        {
+            readPath = path;
+            //从指定路径读取xml文件
+            XDocument doc = XDocument.Load(readPath);
+
+            var copypath = (from s in doc.Descendants("setting")
+                            from p_simple in doc.Descendants("pathes_simple").Attributes("path")
+                            from p_complex in doc.Descendants("pathes_complex").Attributes("path")
+                            select new CopyPathInfo
+                            {
+                                PrefixName = s.Element("prefixName").Value,
+                                PostfixName = s.Element("postfixName").Value
+                            }).FirstOrDefault();
+
+            copypath.Path_Simple=(from p_simple in doc.Descendants("pathes_simple").Attributes("path")
+             select p_simple.ToString()).ToArray();
+
+            copypath.Path_Complex = (from p_complex in doc.Descendants("pathes_complex").Attributes("path")
+                                    select p_complex.ToString()).ToArray();
+            return copypath;
         }
     }
 }

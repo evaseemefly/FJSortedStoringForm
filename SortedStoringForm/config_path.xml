@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CopyPathInfo>
+  <setting>
+    <prefixName>station_data</prefixName>
+    <postfixName>real_time</postfixName>
+  </setting>
+  <pathes_simple>
+    <path>D:/ceshi/vast</path>
+  </pathes_simple>
+  <pathes_complex>
+    <path>D:/ceshi/tobeijing</path>
+  </pathes_complex>
+</CopyPathInfo>

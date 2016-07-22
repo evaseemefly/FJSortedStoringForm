@@ -35,7 +35,6 @@
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.删除测试ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.复制测试ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.测试ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -46,7 +45,6 @@
             this.col_Type = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.txt_Msg = new System.Windows.Forms.TextBox();
-            this.测试复制ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -60,9 +58,7 @@
             this.菜单ToolStripMenuItem,
             this.toolStripMenuItem1,
             this.删除测试ToolStripMenuItem,
-            this.复制测试ToolStripMenuItem,
-            this.测试ToolStripMenuItem,
-            this.测试复制ToolStripMenuItem});
+            this.复制测试ToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(772, 25);
@@ -81,14 +77,14 @@
             // 系统设置ToolStripMenuItem
             // 
             this.系统设置ToolStripMenuItem.Name = "系统设置ToolStripMenuItem";
-            this.系统设置ToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
+            this.系统设置ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.系统设置ToolStripMenuItem.Text = "系统设置";
             this.系统设置ToolStripMenuItem.Click += new System.EventHandler(this.系统设置ToolStripMenuItem_Click);
             // 
             // 退出ToolStripMenuItem
             // 
             this.退出ToolStripMenuItem.Name = "退出ToolStripMenuItem";
-            this.退出ToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
+            this.退出ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.退出ToolStripMenuItem.Text = "退出";
             // 
             // toolStripMenuItem1
@@ -111,13 +107,6 @@
             this.复制测试ToolStripMenuItem.Size = new System.Drawing.Size(68, 21);
             this.复制测试ToolStripMenuItem.Text = "启动监控";
             this.复制测试ToolStripMenuItem.Click += new System.EventHandler(this.复制测试ToolStripMenuItem_Click);
-            // 
-            // 测试ToolStripMenuItem
-            // 
-            this.测试ToolStripMenuItem.Name = "测试ToolStripMenuItem";
-            this.测试ToolStripMenuItem.Size = new System.Drawing.Size(44, 21);
-            this.测试ToolStripMenuItem.Text = "测试";
-            this.测试ToolStripMenuItem.Click += new System.EventHandler(this.测试ToolStripMenuItem_Click);
             // 
             // flowLayoutPanel1
             // 
@@ -206,12 +195,6 @@
             this.txt_Msg.Size = new System.Drawing.Size(748, 302);
             this.txt_Msg.TabIndex = 4;
             // 
-            // 测试复制ToolStripMenuItem
-            // 
-            this.测试复制ToolStripMenuItem.Name = "测试复制ToolStripMenuItem";
-            this.测试复制ToolStripMenuItem.Size = new System.Drawing.Size(68, 21);
-            this.测试复制ToolStripMenuItem.Text = "测试复制";
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -254,8 +237,6 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.ToolStripMenuItem 测试ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem 测试复制ToolStripMenuItem;
     }
 }
 

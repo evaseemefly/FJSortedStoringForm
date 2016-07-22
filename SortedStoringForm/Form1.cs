@@ -20,12 +20,14 @@ namespace SortedStoringForm
         private int watcherInterval;
         private static string filter="*.txt";
         private static string targetPath= @"E:\03协同开发\测试\转发目录";
-
+        private List<DataTypeInfo> list_dataType;
+        private CopyPathInfo copyPath_model;
         private delegate void dg_AddInfo2Lv(SourceFileInfo model);
 
         private delegate void dg_doCreated(object source, FileSystemEventArgs e);
 
-        private delegate void dg_AddInfo2Msg(string msg);
+        public delegate void dg_AddInfo2Msg(string msg);
+        
 
         public Form1()
         {
@@ -49,6 +51,7 @@ namespace SortedStoringForm
 
         private void OnCreated(object source,FileSystemEventArgs e)
         {
+            dg_AddInfo2Msg dg_addInfo2msg = new dg_AddInfo2Msg(AddInfo2Msg);
             //1 执行分类操作
             //1.1 获取文件名
             string fileName = e.Name;
@@ -60,17 +63,26 @@ namespace SortedStoringForm
             {
                 FileName = e.Name,
                 SourcePath = watcherPath,
-                SubTime = date,
-                TypeCode = 1
+                SubTime = date
             };
             var copy_model = new CopyPathInfo()
             {
                 PrefixName = "",
+                
             };
-            //1.2 对文件名进行筛查
-            FileHelper.Copy(fileName, watcherPath, targetPath);
-
-            AddInfo2Lv(file_model);
+            if (list_dataType.Count>0)
+            {
+                //1.2 对文件名进行筛查
+                FileHelper.Copy(fileName, watcherPath, targetPath);
+                Client client = new Client(dg_addInfo2msg);
+                client.CheckAndCopy(this.list_dataType, file_model, copyPath_model);
+                AddInfo2Lv(file_model);
+            }
+            else
+            {
+                return;
+            }
+           
         }
 
         private void RemoveInfoFromListView()
@@ -116,13 +128,20 @@ namespace SortedStoringForm
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            //读取配置文档至当前的配置集合中
+            LoadConfig();
+            
         }
 
-        private void toolStripTextBox1_Click(object sender, EventArgs e)
+        //读取配置文件中DataType（站代码，名称，规则）集合
+        private void LoadConfig()
         {
+            //XmlHelper.ReadPath(@"E:\03协同开发\福建省分类存储\SortedStoringForm\SortedStoringForm\config.xml");
+            list_dataType= XmlHelper.ReadXml2DataTypeInfo(@"E:\03协同开发\福建省分类存储\SortedStoringForm\SortedStoringForm\config_type.xml");
+            copyPath_model = XmlHelper.ReadXml2CopyPathInfo(@"E:\03协同开发\福建省分类存储\SortedStoringForm\SortedStoringForm\config_path.xml");
 
         }
+
 
         private void 删除测试ToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -130,7 +149,8 @@ namespace SortedStoringForm
         }
 
         private void 复制测试ToolStripMenuItem_Click(object sender, EventArgs e)
-        {
+        {           
+
             //进行复制指定文件的测试
             AddInfo2Msg("监控线程已启动");
             //1 创建监控对象
@@ -168,10 +188,12 @@ namespace SortedStoringForm
             this.txt_Msg.AppendText(msg + "\r\n");
         }
 
-        private void 测试ToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            XmlHelper.ReadPath(@"E:\03协同开发\福建省分类存储\SortedStoringForm\SortedStoringForm\config.xml");
-            XmlHelper.ReadXml2DataTypeInfo(); 
-        }
+        //private void 测试ToolStripMenuItem_Click(object sender, EventArgs e)
+        //{
+        //    XmlHelper.ReadPath(@"E:\03协同开发\福建省分类存储\SortedStoringForm\SortedStoringForm\config.xml");
+        //    XmlHelper.ReadXml2DataTypeInfo(); 
+        //}
+
+        
     }
 }

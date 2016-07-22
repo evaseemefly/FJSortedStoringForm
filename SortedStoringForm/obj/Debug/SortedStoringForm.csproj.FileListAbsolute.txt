@@ -15,3 +15,11 @@ E:\03协同开发\福建省分类存储\SortedStoringForm\SortedStoringForm\bin\
 E:\03协同开发\福建省分类存储\SortedStoringForm\SortedStoringForm\bin\Debug\IOHelper.pdb
 E:\03协同开发\福建省分类存储\SortedStoringForm\SortedStoringForm\bin\Debug\Common.dll
 E:\03协同开发\福建省分类存储\SortedStoringForm\SortedStoringForm\bin\Debug\Common.pdb
+E:\03协同开发\福建省分类存储\SortedStoringForm\SortedStoringForm\bin\Debug\BLL.dll
+E:\03协同开发\福建省分类存储\SortedStoringForm\SortedStoringForm\bin\Debug\IBLL.dll
+E:\03协同开发\福建省分类存储\SortedStoringForm\SortedStoringForm\bin\Debug\IDAL.dll
+E:\03协同开发\福建省分类存储\SortedStoringForm\SortedStoringForm\bin\Debug\DAL.dll
+E:\03协同开发\福建省分类存储\SortedStoringForm\SortedStoringForm\bin\Debug\BLL.pdb
+E:\03协同开发\福建省分类存储\SortedStoringForm\SortedStoringForm\bin\Debug\IBLL.pdb
+E:\03协同开发\福建省分类存储\SortedStoringForm\SortedStoringForm\bin\Debug\IDAL.pdb
+E:\03协同开发\福建省分类存储\SortedStoringForm\SortedStoringForm\bin\Debug\DAL.pdb

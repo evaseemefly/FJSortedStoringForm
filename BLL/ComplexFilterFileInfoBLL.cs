@@ -17,7 +17,7 @@ namespace BLL
             //根据传入的文件进行批量复制
             //将文件分别复制到 ***/data与***/data_name目录下            
             filterFileInfo = new ComplexFilterFileInfoDAL();
-            filterFileInfo.FilterNameByCondition
+            //filterFileInfo.FilterNameByCondition(file.FileName,file.)
             //注意此时复制完会进行删除原文件的操作
 
             return filterFileInfo.Copy(file, copyPath.Path_Complex);
