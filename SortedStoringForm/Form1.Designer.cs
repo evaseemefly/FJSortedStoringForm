@@ -173,7 +173,7 @@
             this.高级设置ToolStripMenuItem1,
             this.设置监控路径ToolStripMenuItem1});
             this.系统设置ToolStripMenuItem1.Name = "系统设置ToolStripMenuItem1";
-            this.系统设置ToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.系统设置ToolStripMenuItem1.Size = new System.Drawing.Size(124, 22);
             this.系统设置ToolStripMenuItem1.Text = "系统设置";
             // 
             // 配置设置ToolStripMenuItem1
@@ -187,7 +187,7 @@
             // 
             this.高级设置ToolStripMenuItem1.Enabled = false;
             this.高级设置ToolStripMenuItem1.Name = "高级设置ToolStripMenuItem1";
-            this.高级设置ToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.高级设置ToolStripMenuItem1.Size = new System.Drawing.Size(148, 22);
             this.高级设置ToolStripMenuItem1.Text = "高级设置";
             // 
             // 设置监控路径ToolStripMenuItem1
@@ -200,7 +200,7 @@
             // 退出ToolStripMenuItem1
             // 
             this.退出ToolStripMenuItem1.Name = "退出ToolStripMenuItem1";
-            this.退出ToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.退出ToolStripMenuItem1.Size = new System.Drawing.Size(124, 22);
             this.退出ToolStripMenuItem1.Text = "退出";
             this.退出ToolStripMenuItem1.Click += new System.EventHandler(this.退出ToolStripMenuItem1_Click);
             // 
@@ -268,6 +268,7 @@
             this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.menuStrip2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "福建省台实时数据分类存储";

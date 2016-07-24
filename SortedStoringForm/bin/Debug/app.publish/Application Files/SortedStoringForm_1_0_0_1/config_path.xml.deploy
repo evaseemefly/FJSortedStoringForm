@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CopyPathInfo>
+  <setting>
+    <prefixName>station_data</prefixName>
+    <postfixName>real_time</postfixName>
+  </setting>
+  <pathes_simple>
+    <path>D:\01编程\02协作开发\测试路径\分类存储目录</path>
+  </pathes_simple>
+  <pathes_complex>
+    <path>D:\01编程\02协作开发\测试路径\发送接口目录</path>
+  </pathes_complex>
+</CopyPathInfo>

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<types>
+  <type>
+    <code>1</code>
+    <name>4号大浮标</name>
+    <rule>\w+0023.dhb.xml</rule>
+  </type>
+  <type>
+    <code>2</code>
+    <name>5号大浮标</name>
+    <rule>\w+0024.dhb.xml</rule>
+  </type>
+</types>

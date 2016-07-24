@@ -59,6 +59,9 @@
   <PropertyGroup>
     <SignManifests>true</SignManifests>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Hard_disk_Harddrive_48px_1183706_easyicon.net.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -149,6 +152,7 @@
     <Content Include="config_path.xml">
       <SubType>Designer</SubType>
     </Content>
+    <Content Include="Hard_disk_Harddrive_48px_1183706_easyicon.net.ico" />
     <Content Include="Icon\btn_end.png" />
     <Content Include="Icon\btn_start.png" />
     <Content Include="Icon\btn_end_24.png" />

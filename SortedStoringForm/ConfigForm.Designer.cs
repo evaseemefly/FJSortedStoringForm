@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ConfigForm));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.button2 = new System.Windows.Forms.Button();
             this.txt_path = new System.Windows.Forms.TextBox();
@@ -40,8 +41,8 @@
             this.oFd_configPath = new System.Windows.Forms.OpenFileDialog();
             this.oFd_configType = new System.Windows.Forms.OpenFileDialog();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.label3 = new System.Windows.Forms.Label();
             this.txt_watcherFilter = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -152,6 +153,13 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "过滤器设置";
             // 
+            // txt_watcherFilter
+            // 
+            this.txt_watcherFilter.Location = new System.Drawing.Point(124, 29);
+            this.txt_watcherFilter.Name = "txt_watcherFilter";
+            this.txt_watcherFilter.Size = new System.Drawing.Size(321, 21);
+            this.txt_watcherFilter.TabIndex = 1;
+            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -160,13 +168,6 @@
             this.label3.Size = new System.Drawing.Size(89, 12);
             this.label3.TabIndex = 0;
             this.label3.Text = "设置监控过滤器";
-            // 
-            // txt_watcherFilter
-            // 
-            this.txt_watcherFilter.Location = new System.Drawing.Point(124, 29);
-            this.txt_watcherFilter.Name = "txt_watcherFilter";
-            this.txt_watcherFilter.Size = new System.Drawing.Size(321, 21);
-            this.txt_watcherFilter.TabIndex = 1;
             // 
             // ConfigForm
             // 
@@ -177,6 +178,7 @@
             this.Controls.Add(this.btn_Ok);
             this.Controls.Add(this.btn_Cancel);
             this.Controls.Add(this.groupBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ConfigForm";
             this.Text = "配置设置";
             this.Load += new System.EventHandler(this.ConfigForm_Load);
