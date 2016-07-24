@@ -9,3 +9,14 @@ E:\03协同开发\福建省分类存储\SortedStoringForm\DAL\bin\Debug\IOHelper
 E:\03协同开发\福建省分类存储\SortedStoringForm\DAL\bin\Debug\Model.pdb
 E:\03协同开发\福建省分类存储\SortedStoringForm\DAL\obj\Debug\DAL.dll
 E:\03协同开发\福建省分类存储\SortedStoringForm\DAL\obj\Debug\DAL.pdb
+D:\01编程\02协作开发\福建省\FJSortedStoringForm\DAL\bin\Debug\DAL.dll
+D:\01编程\02协作开发\福建省\FJSortedStoringForm\DAL\bin\Debug\DAL.pdb
+D:\01编程\02协作开发\福建省\FJSortedStoringForm\DAL\bin\Debug\IDAL.dll
+D:\01编程\02协作开发\福建省\FJSortedStoringForm\DAL\bin\Debug\IOHelper.dll
+D:\01编程\02协作开发\福建省\FJSortedStoringForm\DAL\bin\Debug\Model.dll
+D:\01编程\02协作开发\福建省\FJSortedStoringForm\DAL\bin\Debug\IDAL.pdb
+D:\01编程\02协作开发\福建省\FJSortedStoringForm\DAL\bin\Debug\IOHelper.pdb
+D:\01编程\02协作开发\福建省\FJSortedStoringForm\DAL\bin\Debug\Model.pdb
+D:\01编程\02协作开发\福建省\FJSortedStoringForm\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+D:\01编程\02协作开发\福建省\FJSortedStoringForm\DAL\obj\Debug\DAL.dll
+D:\01编程\02协作开发\福建省\FJSortedStoringForm\DAL\obj\Debug\DAL.pdb

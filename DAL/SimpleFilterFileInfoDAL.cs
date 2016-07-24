@@ -29,7 +29,7 @@ namespace DAL
                     isOk = false;
                 }     
             }
-            base.DelFile(fileInfo);
+            //base.DelFile(fileInfo);
             return isOk;
         }
 

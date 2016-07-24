@@ -36,7 +36,7 @@ namespace DAL
             foreach (var item in targetPathes)
             {
                 //只拷贝文件名称，不复制文件内容
-                FileHelper.CopyFileName(fileInfo.FileName, fileInfo.SourcePath, item);
+                FileHelper.CopyFileName(fileInfo.FileName, fileInfo.SourcePath, item + "/dataname");
             }
             
         }

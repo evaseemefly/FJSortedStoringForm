@@ -3,3 +3,8 @@ E:\03协同开发\福建省分类存储\SortedStoringForm\Model\bin\Debug\Model.
 E:\03协同开发\福建省分类存储\SortedStoringForm\Model\obj\Debug\Model.dll
 E:\03协同开发\福建省分类存储\SortedStoringForm\Model\obj\Debug\Model.pdb
 E:\03协同开发\福建省分类存储\SortedStoringForm\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
+D:\01编程\02协作开发\福建省\FJSortedStoringForm\Model\bin\Debug\Model.dll
+D:\01编程\02协作开发\福建省\FJSortedStoringForm\Model\bin\Debug\Model.pdb
+D:\01编程\02协作开发\福建省\FJSortedStoringForm\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
+D:\01编程\02协作开发\福建省\FJSortedStoringForm\Model\obj\Debug\Model.dll
+D:\01编程\02协作开发\福建省\FJSortedStoringForm\Model\obj\Debug\Model.pdb

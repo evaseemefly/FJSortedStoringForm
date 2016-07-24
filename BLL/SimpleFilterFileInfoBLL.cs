@@ -13,7 +13,7 @@ namespace BLL
     {
         //private IFilterFileInfoDAL filterFileInfo;
 
-        public override bool CopyBatch(SourceFileInfo file, CopyPathInfo copyPath)
+        public override bool CopyBatch(SourceFileInfo file, CopyPathInfo copyPath, DataTypeInfo dateType)
         {
             //根据传入的文件进行批量复制
             //注意将文件复制到Path_Simple中时
@@ -24,7 +24,7 @@ namespace BLL
             {
                 //将要转存的目录进行处理
                 //遍历要转存的目录数组，并向其后加入类似/station_data/realtime这样的两极后缀，并生成最终的转发目录
-                pathes[i] = Path.Combine(copyPath.Path_Simple[i], copyPath.PrefixName, copyPath.PostfixName);
+                pathes[i] = Path.Combine(copyPath.Path_Simple[i], copyPath.PrefixName,dateType.TypeName,copyPath.PostfixName);
             }
             //注意此时复制完会进行删除原文件的操作
             return filterFileInfo.Copy(file, pathes);

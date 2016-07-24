@@ -5,3 +5,10 @@ E:\03协同开发\福建省分类存储\SortedStoringForm\IDAL\bin\Debug\Model.p
 E:\03协同开发\福建省分类存储\SortedStoringForm\IDAL\obj\Debug\IDAL.csprojResolveAssemblyReference.cache
 E:\03协同开发\福建省分类存储\SortedStoringForm\IDAL\obj\Debug\IDAL.dll
 E:\03协同开发\福建省分类存储\SortedStoringForm\IDAL\obj\Debug\IDAL.pdb
+D:\01编程\02协作开发\福建省\FJSortedStoringForm\IDAL\bin\Debug\IDAL.dll
+D:\01编程\02协作开发\福建省\FJSortedStoringForm\IDAL\bin\Debug\IDAL.pdb
+D:\01编程\02协作开发\福建省\FJSortedStoringForm\IDAL\bin\Debug\Model.dll
+D:\01编程\02协作开发\福建省\FJSortedStoringForm\IDAL\bin\Debug\Model.pdb
+D:\01编程\02协作开发\福建省\FJSortedStoringForm\IDAL\obj\Debug\IDAL.csprojResolveAssemblyReference.cache
+D:\01编程\02协作开发\福建省\FJSortedStoringForm\IDAL\obj\Debug\IDAL.dll
+D:\01编程\02协作开发\福建省\FJSortedStoringForm\IDAL\obj\Debug\IDAL.pdb

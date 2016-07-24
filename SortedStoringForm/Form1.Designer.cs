@@ -28,13 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.菜单ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.系统设置ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.退出ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.删除测试ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.复制测试ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -45,76 +39,34 @@
             this.col_Type = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.txt_Msg = new System.Windows.Forms.TextBox();
-            this.menuStrip1.SuspendLayout();
+            this.fBd_watcherPath = new System.Windows.Forms.FolderBrowserDialog();
+            this.menuStrip2 = new System.Windows.Forms.MenuStrip();
+            this.菜单ToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.系统设置ToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.配置设置ToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.高级设置ToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.设置监控路径ToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.退出ToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.tsBtn_Start = new System.Windows.Forms.ToolStripButton();
+            this.tsBtn_Stop = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.tsBtn_Clear = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             this.flowLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            this.menuStrip2.SuspendLayout();
+            this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // menuStrip1
-            // 
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.菜单ToolStripMenuItem,
-            this.toolStripMenuItem1,
-            this.删除测试ToolStripMenuItem,
-            this.复制测试ToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(772, 25);
-            this.menuStrip1.TabIndex = 0;
-            this.menuStrip1.Text = "menuStrip1";
-            // 
-            // 菜单ToolStripMenuItem
-            // 
-            this.菜单ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.系统设置ToolStripMenuItem,
-            this.退出ToolStripMenuItem});
-            this.菜单ToolStripMenuItem.Name = "菜单ToolStripMenuItem";
-            this.菜单ToolStripMenuItem.Size = new System.Drawing.Size(44, 21);
-            this.菜单ToolStripMenuItem.Text = "菜单";
-            // 
-            // 系统设置ToolStripMenuItem
-            // 
-            this.系统设置ToolStripMenuItem.Name = "系统设置ToolStripMenuItem";
-            this.系统设置ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.系统设置ToolStripMenuItem.Text = "系统设置";
-            this.系统设置ToolStripMenuItem.Click += new System.EventHandler(this.系统设置ToolStripMenuItem_Click);
-            // 
-            // 退出ToolStripMenuItem
-            // 
-            this.退出ToolStripMenuItem.Name = "退出ToolStripMenuItem";
-            this.退出ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.退出ToolStripMenuItem.Text = "退出";
-            // 
-            // toolStripMenuItem1
-            // 
-            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(68, 21);
-            this.toolStripMenuItem1.Text = "添加测试";
-            this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
-            // 
-            // 删除测试ToolStripMenuItem
-            // 
-            this.删除测试ToolStripMenuItem.Name = "删除测试ToolStripMenuItem";
-            this.删除测试ToolStripMenuItem.Size = new System.Drawing.Size(68, 21);
-            this.删除测试ToolStripMenuItem.Text = "删除测试";
-            this.删除测试ToolStripMenuItem.Click += new System.EventHandler(this.删除测试ToolStripMenuItem_Click);
-            // 
-            // 复制测试ToolStripMenuItem
-            // 
-            this.复制测试ToolStripMenuItem.Name = "复制测试ToolStripMenuItem";
-            this.复制测试ToolStripMenuItem.Size = new System.Drawing.Size(68, 21);
-            this.复制测试ToolStripMenuItem.Text = "启动监控";
-            this.复制测试ToolStripMenuItem.Click += new System.EventHandler(this.复制测试ToolStripMenuItem_Click);
             // 
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.Controls.Add(this.tableLayoutPanel1);
-            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 25);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 53);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(772, 685);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(772, 646);
             this.flowLayoutPanel1.TabIndex = 1;
             // 
             // tableLayoutPanel1
@@ -129,7 +81,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 47.02094F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 52.97906F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(766, 642);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(766, 635);
             this.tableLayoutPanel1.TabIndex = 5;
             // 
             // groupBox1
@@ -180,7 +132,7 @@
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.txt_Msg);
-            this.groupBox2.Location = new System.Drawing.Point(3, 295);
+            this.groupBox2.Location = new System.Drawing.Point(3, 292);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(760, 319);
             this.groupBox2.TabIndex = 7;
@@ -189,54 +141,176 @@
             // 
             // txt_Msg
             // 
-            this.txt_Msg.Location = new System.Drawing.Point(6, 11);
+            this.txt_Msg.Location = new System.Drawing.Point(6, 20);
             this.txt_Msg.Multiline = true;
             this.txt_Msg.Name = "txt_Msg";
-            this.txt_Msg.Size = new System.Drawing.Size(748, 302);
+            this.txt_Msg.Size = new System.Drawing.Size(748, 293);
             this.txt_Msg.TabIndex = 4;
+            // 
+            // menuStrip2
+            // 
+            this.menuStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.菜单ToolStripMenuItem1});
+            this.menuStrip2.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip2.Name = "menuStrip2";
+            this.menuStrip2.Size = new System.Drawing.Size(772, 25);
+            this.menuStrip2.TabIndex = 2;
+            this.menuStrip2.Text = "menuStrip2";
+            // 
+            // 菜单ToolStripMenuItem1
+            // 
+            this.菜单ToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.系统设置ToolStripMenuItem1,
+            this.退出ToolStripMenuItem1});
+            this.菜单ToolStripMenuItem1.Name = "菜单ToolStripMenuItem1";
+            this.菜单ToolStripMenuItem1.Size = new System.Drawing.Size(44, 21);
+            this.菜单ToolStripMenuItem1.Text = "菜单";
+            // 
+            // 系统设置ToolStripMenuItem1
+            // 
+            this.系统设置ToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.配置设置ToolStripMenuItem1,
+            this.高级设置ToolStripMenuItem1,
+            this.设置监控路径ToolStripMenuItem1});
+            this.系统设置ToolStripMenuItem1.Name = "系统设置ToolStripMenuItem1";
+            this.系统设置ToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.系统设置ToolStripMenuItem1.Text = "系统设置";
+            // 
+            // 配置设置ToolStripMenuItem1
+            // 
+            this.配置设置ToolStripMenuItem1.Name = "配置设置ToolStripMenuItem1";
+            this.配置设置ToolStripMenuItem1.Size = new System.Drawing.Size(148, 22);
+            this.配置设置ToolStripMenuItem1.Text = "配置设置";
+            this.配置设置ToolStripMenuItem1.Click += new System.EventHandler(this.配置设置ToolStripMenuItem1_Click);
+            // 
+            // 高级设置ToolStripMenuItem1
+            // 
+            this.高级设置ToolStripMenuItem1.Enabled = false;
+            this.高级设置ToolStripMenuItem1.Name = "高级设置ToolStripMenuItem1";
+            this.高级设置ToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.高级设置ToolStripMenuItem1.Text = "高级设置";
+            // 
+            // 设置监控路径ToolStripMenuItem1
+            // 
+            this.设置监控路径ToolStripMenuItem1.Name = "设置监控路径ToolStripMenuItem1";
+            this.设置监控路径ToolStripMenuItem1.Size = new System.Drawing.Size(148, 22);
+            this.设置监控路径ToolStripMenuItem1.Text = "设置监控路径";
+            this.设置监控路径ToolStripMenuItem1.Click += new System.EventHandler(this.设置监控路径ToolStripMenuItem1_Click);
+            // 
+            // 退出ToolStripMenuItem1
+            // 
+            this.退出ToolStripMenuItem1.Name = "退出ToolStripMenuItem1";
+            this.退出ToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.退出ToolStripMenuItem1.Text = "退出";
+            this.退出ToolStripMenuItem1.Click += new System.EventHandler(this.退出ToolStripMenuItem1_Click);
+            // 
+            // toolStrip1
+            // 
+            this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tsBtn_Start,
+            this.tsBtn_Stop,
+            this.toolStripSeparator1,
+            this.tsBtn_Clear,
+            this.toolStripButton1});
+            this.toolStrip1.Location = new System.Drawing.Point(0, 25);
+            this.toolStrip1.Name = "toolStrip1";
+            this.toolStrip1.Size = new System.Drawing.Size(772, 25);
+            this.toolStrip1.TabIndex = 3;
+            this.toolStrip1.Text = "toolStrip1";
+            // 
+            // tsBtn_Start
+            // 
+            this.tsBtn_Start.Image = ((System.Drawing.Image)(resources.GetObject("tsBtn_Start.Image")));
+            this.tsBtn_Start.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsBtn_Start.Name = "tsBtn_Start";
+            this.tsBtn_Start.Size = new System.Drawing.Size(76, 22);
+            this.tsBtn_Start.Text = "启动监控";
+            this.tsBtn_Start.Click += new System.EventHandler(this.toolStripButton1_Click);
+            // 
+            // tsBtn_Stop
+            // 
+            this.tsBtn_Stop.Image = ((System.Drawing.Image)(resources.GetObject("tsBtn_Stop.Image")));
+            this.tsBtn_Stop.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsBtn_Stop.Name = "tsBtn_Stop";
+            this.tsBtn_Stop.Size = new System.Drawing.Size(76, 22);
+            this.tsBtn_Stop.Text = "停止监控";
+            this.tsBtn_Stop.Click += new System.EventHandler(this.toolStripButton2_Click);
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 25);
+            // 
+            // tsBtn_Clear
+            // 
+            this.tsBtn_Clear.Image = ((System.Drawing.Image)(resources.GetObject("tsBtn_Clear.Image")));
+            this.tsBtn_Clear.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsBtn_Clear.Name = "tsBtn_Clear";
+            this.tsBtn_Clear.Size = new System.Drawing.Size(76, 22);
+            this.tsBtn_Clear.Text = "清空列表";
+            this.tsBtn_Clear.Click += new System.EventHandler(this.toolStripButton3_Click);
+            // 
+            // toolStripButton1
+            // 
+            this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
+            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton1.Name = "toolStripButton1";
+            this.toolStripButton1.Size = new System.Drawing.Size(100, 22);
+            this.toolStripButton1.Text = "遍历监控目录";
+            this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click_1);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(772, 710);
+            this.ClientSize = new System.Drawing.Size(772, 679);
+            this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.flowLayoutPanel1);
-            this.Controls.Add(this.menuStrip1);
-            this.MainMenuStrip = this.menuStrip1;
+            this.Controls.Add(this.menuStrip2);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "福建省台实时数据分类存储";
             this.Load += new System.EventHandler(this.Form1_Load);
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
             this.flowLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            this.menuStrip2.ResumeLayout(false);
+            this.menuStrip2.PerformLayout();
+            this.toolStrip1.ResumeLayout(false);
+            this.toolStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem 菜单ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem 系统设置ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem 退出ToolStripMenuItem;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
         private System.Windows.Forms.ListView lv_fileInfo;
         private System.Windows.Forms.ColumnHeader col_fileName;
         private System.Windows.Forms.ColumnHeader col_sourcePath;
         private System.Windows.Forms.ColumnHeader col_subTime;
         private System.Windows.Forms.ColumnHeader col_Type;
-        private System.Windows.Forms.ToolStripMenuItem 删除测试ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem 复制测试ToolStripMenuItem;
         private System.Windows.Forms.TextBox txt_Msg;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.FolderBrowserDialog fBd_watcherPath;
+        private System.Windows.Forms.MenuStrip menuStrip2;
+        private System.Windows.Forms.ToolStripMenuItem 菜单ToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem 系统设置ToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem 配置设置ToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem 高级设置ToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem 设置监控路径ToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem 退出ToolStripMenuItem1;
+        private System.Windows.Forms.ToolStrip toolStrip1;
+        private System.Windows.Forms.ToolStripButton tsBtn_Start;
+        private System.Windows.Forms.ToolStripButton tsBtn_Stop;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
+        private System.Windows.Forms.ToolStripButton tsBtn_Clear;
+        private System.Windows.Forms.ToolStripButton toolStripButton1;
     }
 }
 

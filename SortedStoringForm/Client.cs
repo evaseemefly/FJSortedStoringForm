@@ -30,11 +30,11 @@ namespace SortedStoringForm
             CreateBLL();
         }
 
-        public void DoCopy(SourceFileInfo fileInfo,CopyPathInfo copyInfo)
+        public void DoCopy(SourceFileInfo fileInfo,CopyPathInfo copyInfo,DataTypeInfo dateType)
         {
             //进行批量复制
-            complexBLL.CopyBatch(fileInfo, copyInfo);
-            simpleBLL.CopyBatch(fileInfo, copyInfo);
+            complexBLL.CopyBatch(fileInfo, copyInfo,dateType);
+            simpleBLL.CopyBatch(fileInfo, copyInfo, dateType);
             showmsg("批量复制成功");
             //批量复制后进行删除操作
             simpleBLL.DelFile(fileInfo);
@@ -50,21 +50,23 @@ namespace SortedStoringForm
                 {
                     //将站代码赋给当前文件的种类编码
                     fileInfo.TypeCode = item.TypeCode;
-                    DoCopy(fileInfo, copyInfo);
+                    DoCopy(fileInfo, copyInfo,item);
                 }
             }
         }
 
         public static bool CheckFilterFileName(string name, string filterPattern)
         {
-            Regex regex = new Regex(filterPattern);
-            Match match = regex.Match(name);
+            //string pattern = Regex.Escape(filterPattern);
+            //Regex regex = new Regex(@filterPattern);
+
+            Match match = Regex.Match(name, filterPattern);
             string value = match.Groups[0].Value;
             if (string.IsNullOrEmpty(value))
             {
-                return true;
+                return false;
             }
-            return false;
+            return true;
         }
     }
 }

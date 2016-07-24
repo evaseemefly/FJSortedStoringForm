@@ -12,7 +12,7 @@ namespace BLL
     public class ComplexFilterFileInfoBLL:BaseFilterFileInfoBLL
     {       
 
-        public override bool CopyBatch(SourceFileInfo file, CopyPathInfo copyPath)
+        public override bool CopyBatch(SourceFileInfo file, CopyPathInfo copyPath, DataTypeInfo dateType)
         {
             //根据传入的文件进行批量复制
             //将文件分别复制到 ***/data与***/data_name目录下            

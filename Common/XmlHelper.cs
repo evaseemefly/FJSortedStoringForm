@@ -56,19 +56,19 @@ namespace Common
             XDocument doc = XDocument.Load(readPath);
 
             var copypath = (from s in doc.Descendants("setting")
-                            from p_simple in doc.Descendants("pathes_simple").Attributes("path")
-                            from p_complex in doc.Descendants("pathes_complex").Attributes("path")
+                            //from p_simple in doc.Descendants("pathes_simple").Attributes("path")
+                            //from p_complex in doc.Descendants("pathes_complex").Attributes("path")
                             select new CopyPathInfo
                             {
                                 PrefixName = s.Element("prefixName").Value,
                                 PostfixName = s.Element("postfixName").Value
                             }).FirstOrDefault();
 
-            copypath.Path_Simple=(from p_simple in doc.Descendants("pathes_simple").Attributes("path")
-             select p_simple.ToString()).ToArray();
+            copypath.Path_Simple=(from p_simple in doc.Descendants("pathes_simple").Elements("path")
+             select p_simple.Value).ToArray();
 
-            copypath.Path_Complex = (from p_complex in doc.Descendants("pathes_complex").Attributes("path")
-                                    select p_complex.ToString()).ToArray();
+            copypath.Path_Complex = (from p_complex in doc.Descendants("pathes_complex").Elements("path")
+                                    select p_complex.Value).ToArray();
             return copypath;
         }
     }

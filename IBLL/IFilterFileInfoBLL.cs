@@ -9,7 +9,7 @@ namespace IBLL
 {
     public interface IFilterFileInfoBLL
     {
-        bool CopyBatch(SourceFileInfo file, CopyPathInfo copyPath);
+        bool CopyBatch(SourceFileInfo file, CopyPathInfo copyPath, DataTypeInfo dateType);
 
         bool DelFile(SourceFileInfo fileInfo);
     }

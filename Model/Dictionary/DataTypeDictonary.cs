@@ -9,7 +9,7 @@ namespace Model.Dictionary
     {
         private static Dictionary<int, string> dataType;
 
-        public static Dictionary<int,string> GetTypeCode()
+        public Dictionary<int,string> GetTypeCode()
         {
             return dataType;
         }
@@ -19,8 +19,12 @@ namespace Model.Dictionary
             dataType = new Dictionary<int, string>();
         }
 
-        static void Add(int key,string value)
+        public void Add(int key,string value)
         {
+            if (dataType.ContainsKey(key))
+            {
+                return;
+            }
             dataType.Add(key, value);
         }
     }

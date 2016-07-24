@@ -3,3 +3,8 @@ E:\03协同开发\福建省分类存储\SortedStoringForm\IOHelper\bin\Debug\IOH
 E:\03协同开发\福建省分类存储\SortedStoringForm\IOHelper\obj\Debug\IOHelper.dll
 E:\03协同开发\福建省分类存储\SortedStoringForm\IOHelper\obj\Debug\IOHelper.pdb
 E:\03协同开发\福建省分类存储\SortedStoringForm\IOHelper\obj\Debug\IOHelper.csprojResolveAssemblyReference.cache
+D:\01编程\02协作开发\福建省\FJSortedStoringForm\IOHelper\bin\Debug\IOHelper.dll
+D:\01编程\02协作开发\福建省\FJSortedStoringForm\IOHelper\bin\Debug\IOHelper.pdb
+D:\01编程\02协作开发\福建省\FJSortedStoringForm\IOHelper\obj\Debug\IOHelper.csprojResolveAssemblyReference.cache
+D:\01编程\02协作开发\福建省\FJSortedStoringForm\IOHelper\obj\Debug\IOHelper.dll
+D:\01编程\02协作开发\福建省\FJSortedStoringForm\IOHelper\obj\Debug\IOHelper.pdb

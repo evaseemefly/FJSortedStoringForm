@@ -5,3 +5,10 @@ E:\03协同开发\福建省分类存储\SortedStoringForm\IBLL\bin\Debug\Model.p
 E:\03协同开发\福建省分类存储\SortedStoringForm\IBLL\obj\Debug\IBLL.csprojResolveAssemblyReference.cache
 E:\03协同开发\福建省分类存储\SortedStoringForm\IBLL\obj\Debug\IBLL.dll
 E:\03协同开发\福建省分类存储\SortedStoringForm\IBLL\obj\Debug\IBLL.pdb
+D:\01编程\02协作开发\福建省\FJSortedStoringForm\IBLL\bin\Debug\IBLL.dll
+D:\01编程\02协作开发\福建省\FJSortedStoringForm\IBLL\bin\Debug\IBLL.pdb
+D:\01编程\02协作开发\福建省\FJSortedStoringForm\IBLL\bin\Debug\Model.dll
+D:\01编程\02协作开发\福建省\FJSortedStoringForm\IBLL\bin\Debug\Model.pdb
+D:\01编程\02协作开发\福建省\FJSortedStoringForm\IBLL\obj\Debug\IBLL.csprojResolveAssemblyReference.cache
+D:\01编程\02协作开发\福建省\FJSortedStoringForm\IBLL\obj\Debug\IBLL.dll
+D:\01编程\02协作开发\福建省\FJSortedStoringForm\IBLL\obj\Debug\IBLL.pdb
