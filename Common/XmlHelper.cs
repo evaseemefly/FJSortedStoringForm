@@ -42,7 +42,8 @@ namespace Common
                      {
                           TypeCode =int.Parse(s.Element("code").Value) ,
                           TypeName = s.Element("name").Value,
-                          TypeRule=s.Element("rule").Value
+                          TypeRule=s.Element("rule").Value,
+                          DirName=s.Element("DirName").Value
                      };
                                 
             return typeInfos.ToList();

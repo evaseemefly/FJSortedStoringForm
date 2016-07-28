@@ -18,6 +18,10 @@ namespace Model
         public string TypeName { get; set; }
 
         /// <summary>
+        /// 此属性为在监控目录下的次级目录名称
+        /// </summary>
+        public string DirName { get; set; }
+        /// <summary>
         /// 类型正则
         /// </summary>
         public string TypeRule { get; set; }

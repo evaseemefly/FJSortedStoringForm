@@ -12,3 +12,10 @@ D:\01编程\02协作开发\福建省\FJSortedStoringForm\IBLL\bin\Debug\Model.pd
 D:\01编程\02协作开发\福建省\FJSortedStoringForm\IBLL\obj\Debug\IBLL.csprojResolveAssemblyReference.cache
 D:\01编程\02协作开发\福建省\FJSortedStoringForm\IBLL\obj\Debug\IBLL.dll
 D:\01编程\02协作开发\福建省\FJSortedStoringForm\IBLL\obj\Debug\IBLL.pdb
+D:\02编程\2016年\01协同开发\FJSortedStoringForm\IBLL\bin\Debug\IBLL.dll
+D:\02编程\2016年\01协同开发\FJSortedStoringForm\IBLL\bin\Debug\IBLL.pdb
+D:\02编程\2016年\01协同开发\FJSortedStoringForm\IBLL\bin\Debug\Model.dll
+D:\02编程\2016年\01协同开发\FJSortedStoringForm\IBLL\bin\Debug\Model.pdb
+D:\02编程\2016年\01协同开发\FJSortedStoringForm\IBLL\obj\Debug\IBLL.csprojResolveAssemblyReference.cache
+D:\02编程\2016年\01协同开发\FJSortedStoringForm\IBLL\obj\Debug\IBLL.dll
+D:\02编程\2016年\01协同开发\FJSortedStoringForm\IBLL\obj\Debug\IBLL.pdb

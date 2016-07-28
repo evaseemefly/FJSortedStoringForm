@@ -43,6 +43,7 @@
     <Compile Include="DataTypeInfo.cs" />
     <Compile Include="Dictionary\DataTypeDictonary.cs" />
     <Compile Include="Enum\CopyTypeEnum.cs" />
+    <Compile Include="EqualCompare\DataType_Compare.cs" />
     <Compile Include="SourceFileInfo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -33,16 +33,24 @@ namespace SortedStoringForm
         public void DoCopy(SourceFileInfo fileInfo,CopyPathInfo copyInfo,DataTypeInfo dateType)
         {
             //进行批量复制
-            complexBLL.CopyBatch(fileInfo, copyInfo,dateType);
-            simpleBLL.CopyBatch(fileInfo, copyInfo, dateType);
-            showmsg("批量复制成功");
-            //批量复制后进行删除操作
-            simpleBLL.DelFile(fileInfo);
+            if(complexBLL.CopyBatch(fileInfo, copyInfo, dateType) && simpleBLL.CopyBatch(fileInfo, copyInfo, dateType))
+            {
+                showmsg("批量复制成功  复制文件为:" + fileInfo.FileName);
+            }
+            else
+            {
+                showmsg("批量复制失败 复制文件为:" + fileInfo.FileName);
+            }
+           
+           
+            //批量复制后进行删除操作（不要删除）
+            //simpleBLL.DelFile(fileInfo);
             
         }
 
-        public void CheckAndCopy(List<DataTypeInfo> list_datatypeInfo, SourceFileInfo fileInfo,CopyPathInfo copyInfo)
+        public bool CheckAndCopy(List<DataTypeInfo> list_datatypeInfo, SourceFileInfo fileInfo,CopyPathInfo copyInfo)
         {
+            bool isOk = false;
             //遍历规则集合
             foreach (var item in list_datatypeInfo)
             {
@@ -51,8 +59,12 @@ namespace SortedStoringForm
                     //将站代码赋给当前文件的种类编码
                     fileInfo.TypeCode = item.TypeCode;
                     DoCopy(fileInfo, copyInfo,item);
+                    isOk = true;
+                    //只要在规则中找到匹配的规则就跳出循环
+                    return isOk;
                 }
             }
+            return isOk;
         }
 
         public static bool CheckFilterFileName(string name, string filterPattern)

@@ -27,7 +27,7 @@ namespace SortedStoringForm
         private Dictionary<int, string> dict_dataType;
         private CopyPathInfo copyPath_model;
         private delegate void dg_AddInfo2Lv(SourceFileInfo model);
-        FileSystemWatcher fileWather;
+        FileSystemWatcher[] fileWather;
         private delegate void dg_doCreated(object source, FileSystemEventArgs e);
 
         public delegate void dg_AddInfo2Msg(string msg);
@@ -60,15 +60,21 @@ namespace SortedStoringForm
             dg_AddInfo2Msg dg_addInfo2msg = new dg_AddInfo2Msg(AddInfo2Msg);
             //1 执行分类操作
             //1.1 获取文件名
-            string fileName = e.Name;
-            
+            //注意由于是监控文件夹下面的子目录，所以此时的file.Name为***\\*****
+            //		FullPath	"D:\\02编程\\2016年\\05测试目录\\监控目录\\DSB\\20160726\\2016072500008201.dsb.xml"	string
+
+            var index = e.FullPath.LastIndexOf("\\");
+           var names_split= e.FullPath.Split('\\');
+            string fileName = names_split.Last();
+            string sourcePath = e.FullPath.Substring(0, index);
             string pattern=filter;
-            FileInfo file = new FileInfo(Path.Combine(watcherPath, fileName));            
+            FileInfo file = new FileInfo(Path.Combine(sourcePath, fileName));           
             var date = file.CreationTime;
+            //D:\02编程\2016年\05测试目录\监控目录\DSB\20160726
             var file_model = new SourceFileInfo()
             {
-                FileName = e.Name,
-                SourcePath = watcherPath,
+                FileName = fileName,
+                SourcePath = sourcePath,
                 SubTime = date
             };
             
@@ -78,8 +84,11 @@ namespace SortedStoringForm
                 //FileHelper.Copy(fileName, watcherPath, targetPath);
 
                 Client client = new Client(dg_addInfo2msg);
-                client.CheckAndCopy(this.list_dataType, file_model, copyPath_model);
-                AddInfo2Lv(file_model);
+                if(client.CheckAndCopy(this.list_dataType, file_model, copyPath_model))
+                {
+                    AddInfo2Lv(file_model);
+                }
+                
             }
             else
             {
@@ -164,13 +173,22 @@ namespace SortedStoringForm
             lv_item.SubItems.Add(dict_dataType[model.TypeCode]);
             lv_item.EnsureVisible();
             //this.lv_fileInfo.BeginUpdate();
+            if (this.lv_fileInfo.Items.Count > 100)
+            {
+                this.lv_fileInfo.Items.Clear();
+                this.txt_Msg.Clear();
+            }
             this.lv_fileInfo.Items.Add(lv_item);
-            AddInfo2Msg("复制:" + model.FileName + "目录：[1]-" + targetPath);
+           // AddInfo2Msg("复制:" + model.FileName + "目录：[1]-" + targetPath);
 
         }
 
         private void AddInfo2Msg(string msg)
         {
+            if (this.txt_Msg.Lines.Count() > 500)
+            {
+                this.txt_Msg.Clear();
+            }
             this.txt_Msg.AppendText(msg + "\r\n");
         }
         
@@ -224,6 +242,35 @@ namespace SortedStoringForm
             return true;
         }
 
+        private void GetWatherSonDir()
+        {
+            
+            if (list_dataType.Count != 0)
+            {
+                var dif_datatype=list_dataType.Distinct(new Model.EqualCompare.DataType_Compare()).ToList();
+                
+                //int index = 0;
+                if (dif_datatype.Count>0)
+                {
+                    fileWather = new FileSystemWatcher[dif_datatype.Count];
+                    for (int i = 0; i < dif_datatype.Count; i++)
+                    {
+                       
+                        fileWather[i] = new FileSystemWatcher();
+                        //此处需要查询配置文件读取各文件所在的目录
+                        fileWather[i].Path = Path.Combine(watcherPath, dif_datatype[i].DirName);
+                        fileWather[i].Filter = filter;
+                        fileWather[i].Created += new FileSystemEventHandler(fileSysWather_EventHandle);
+                        //启用此监视器
+                        fileWather[i].IncludeSubdirectories = true;
+                        fileWather[i].EnableRaisingEvents = true;
+                        //index++;
+                    }
+                    
+                }
+            }
+        }
+
         private void toolStripButton1_Click(object sender, EventArgs e)
         {
             if (!CheckLoadConfig())
@@ -234,20 +281,28 @@ namespace SortedStoringForm
             this.LoadConfig();
             //进行复制指定文件的测试
             AddInfo2Msg("监控线程已启动");
+            //创建不同文件夹的监控对象
+
             //1 创建监控对象
-            fileWather = new FileSystemWatcher();
-            fileWather.Path = watcherPath;
-            fileWather.Filter = filter;
-            fileWather.Created += new FileSystemEventHandler(fileSysWather_EventHandle);
-            //启用此监视器
-            fileWather.EnableRaisingEvents = true;
+            //fileWather = new FileSystemWatcher();
+            ////此处需要查询配置文件读取各文件所在的目录
+            //fileWather.Path = watcherPath;
+            //fileWather.Filter = filter;
+            //fileWather.Created += new FileSystemEventHandler(fileSysWather_EventHandle);
+            ////启用此监视器
+            //fileWather.EnableRaisingEvents = true;
+            GetWatherSonDir();
             this.tsBtn_Stop.Enabled = true;
             this.tsBtn_Start.Enabled = false;
         }
 
         private void toolStripButton2_Click(object sender, EventArgs e)
         {
-            this.fileWather.EnableRaisingEvents = false;
+            foreach (var item in this.fileWather)
+            {
+                item.EnableRaisingEvents = false;
+            }
+            //this.fileWather.EnableRaisingEvents = false;
             this.tsBtn_Start.Enabled = true;
             this.tsBtn_Stop.Enabled = false;
             AddInfo2Msg("监控线程已暂停");
@@ -256,6 +311,7 @@ namespace SortedStoringForm
         private void toolStripButton3_Click(object sender, EventArgs e)
         {
             this.lv_fileInfo.Items.Clear();
+            this.txt_Msg.Clear();
         }
 
         private void toolStripButton1_Click_1(object sender, EventArgs e)

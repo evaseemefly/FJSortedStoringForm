@@ -12,3 +12,10 @@ D:\01编程\02协作开发\福建省\FJSortedStoringForm\IDAL\bin\Debug\Model.pd
 D:\01编程\02协作开发\福建省\FJSortedStoringForm\IDAL\obj\Debug\IDAL.csprojResolveAssemblyReference.cache
 D:\01编程\02协作开发\福建省\FJSortedStoringForm\IDAL\obj\Debug\IDAL.dll
 D:\01编程\02协作开发\福建省\FJSortedStoringForm\IDAL\obj\Debug\IDAL.pdb
+D:\02编程\2016年\01协同开发\FJSortedStoringForm\IDAL\bin\Debug\IDAL.dll
+D:\02编程\2016年\01协同开发\FJSortedStoringForm\IDAL\bin\Debug\IDAL.pdb
+D:\02编程\2016年\01协同开发\FJSortedStoringForm\IDAL\bin\Debug\Model.dll
+D:\02编程\2016年\01协同开发\FJSortedStoringForm\IDAL\bin\Debug\Model.pdb
+D:\02编程\2016年\01协同开发\FJSortedStoringForm\IDAL\obj\Debug\IDAL.csprojResolveAssemblyReference.cache
+D:\02编程\2016年\01协同开发\FJSortedStoringForm\IDAL\obj\Debug\IDAL.dll
+D:\02编程\2016年\01协同开发\FJSortedStoringForm\IDAL\obj\Debug\IDAL.pdb

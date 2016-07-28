@@ -22,7 +22,7 @@ namespace DAL
             {
                 if (base.CopyToTargetPath(fileInfo, item))
                 {
-
+                    isOk = true;
                 }
                 else
                 {

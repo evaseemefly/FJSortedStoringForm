@@ -144,6 +144,7 @@
             this.txt_Msg.Location = new System.Drawing.Point(6, 20);
             this.txt_Msg.Multiline = true;
             this.txt_Msg.Name = "txt_Msg";
+            this.txt_Msg.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.txt_Msg.Size = new System.Drawing.Size(748, 293);
             this.txt_Msg.TabIndex = 4;
             // 
@@ -252,6 +253,7 @@
             // 
             // toolStripButton1
             // 
+            this.toolStripButton1.Enabled = false;
             this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
             this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton1.Name = "toolStripButton1";

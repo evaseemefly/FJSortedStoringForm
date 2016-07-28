@@ -12,3 +12,10 @@ D:\01编程\02协作开发\福建省\FJSortedStoringForm\Common\bin\Debug\Model.
 D:\01编程\02协作开发\福建省\FJSortedStoringForm\Common\obj\Debug\Common.csprojResolveAssemblyReference.cache
 D:\01编程\02协作开发\福建省\FJSortedStoringForm\Common\obj\Debug\Common.dll
 D:\01编程\02协作开发\福建省\FJSortedStoringForm\Common\obj\Debug\Common.pdb
+D:\02编程\2016年\01协同开发\FJSortedStoringForm\Common\bin\Debug\Common.dll
+D:\02编程\2016年\01协同开发\FJSortedStoringForm\Common\bin\Debug\Common.pdb
+D:\02编程\2016年\01协同开发\FJSortedStoringForm\Common\bin\Debug\Model.dll
+D:\02编程\2016年\01协同开发\FJSortedStoringForm\Common\bin\Debug\Model.pdb
+D:\02编程\2016年\01协同开发\FJSortedStoringForm\Common\obj\Debug\Common.csprojResolveAssemblyReference.cache
+D:\02编程\2016年\01协同开发\FJSortedStoringForm\Common\obj\Debug\Common.dll
+D:\02编程\2016年\01协同开发\FJSortedStoringForm\Common\obj\Debug\Common.pdb

@@ -8,3 +8,8 @@ D:\01编程\02协作开发\福建省\FJSortedStoringForm\IOHelper\bin\Debug\IOHe
 D:\01编程\02协作开发\福建省\FJSortedStoringForm\IOHelper\obj\Debug\IOHelper.csprojResolveAssemblyReference.cache
 D:\01编程\02协作开发\福建省\FJSortedStoringForm\IOHelper\obj\Debug\IOHelper.dll
 D:\01编程\02协作开发\福建省\FJSortedStoringForm\IOHelper\obj\Debug\IOHelper.pdb
+D:\02编程\2016年\01协同开发\FJSortedStoringForm\IOHelper\bin\Debug\IOHelper.dll
+D:\02编程\2016年\01协同开发\FJSortedStoringForm\IOHelper\bin\Debug\IOHelper.pdb
+D:\02编程\2016年\01协同开发\FJSortedStoringForm\IOHelper\obj\Debug\IOHelper.dll
+D:\02编程\2016年\01协同开发\FJSortedStoringForm\IOHelper\obj\Debug\IOHelper.pdb
+D:\02编程\2016年\01协同开发\FJSortedStoringForm\IOHelper\obj\Debug\IOHelper.csprojResolveAssemblyReference.cache

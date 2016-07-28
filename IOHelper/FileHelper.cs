@@ -38,7 +38,7 @@ namespace IOHelper
             //3.2 执行复制操作
             try
             {
-                file_temp.CopyTo(fullName_target);
+                file_temp.CopyTo(fullName_target,true);
                 return true;
             }
             catch (Exception e)
@@ -77,8 +77,21 @@ namespace IOHelper
             //3.2 执行复制操作
             try
             {
-                File.Create(fullName_target);
-                
+                //注意创建结束后需要释放资源
+                if(File.Exists(fullName_target))
+                {
+                    try
+                    {
+                        File.Delete(fullName_target);
+                    }
+                    catch(Exception e)
+                    {
+
+                    }
+                   
+                }
+                File.Create(fullName_target).Close();
+                //File.Create(fullName_target,1024,FileOptions.)
                 return true;
             }
             catch (Exception e)

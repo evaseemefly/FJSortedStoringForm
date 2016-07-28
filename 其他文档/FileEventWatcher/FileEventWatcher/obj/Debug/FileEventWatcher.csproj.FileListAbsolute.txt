@@ -12,3 +12,5 @@ D:\01编程\02协作开发\福建省\FJSortedStoringForm\其他文档\FileEventW
 D:\01编程\02协作开发\福建省\FJSortedStoringForm\其他文档\FileEventWatcher\FileEventWatcher\obj\Debug\FileEventWatcher.fileSystemWatcherFrm.resources
 D:\01编程\02协作开发\福建省\FJSortedStoringForm\其他文档\FileEventWatcher\FileEventWatcher\obj\Debug\FileEventWatcher.Properties.Resources.resources
 D:\01编程\02协作开发\福建省\FJSortedStoringForm\其他文档\FileEventWatcher\FileEventWatcher\obj\Debug\FileEventWatcher.csproj.GenerateResource.Cache
+D:\02编程\2016年\01协同开发\FJSortedStoringForm\其他文档\FileEventWatcher\FileEventWatcher\obj\Debug\FileEventWatcher.exe
+D:\02编程\2016年\01协同开发\FJSortedStoringForm\其他文档\FileEventWatcher\FileEventWatcher\obj\Debug\FileEventWatcher.pdb

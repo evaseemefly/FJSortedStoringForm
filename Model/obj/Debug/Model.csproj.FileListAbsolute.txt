@@ -8,3 +8,7 @@ D:\01编程\02协作开发\福建省\FJSortedStoringForm\Model\bin\Debug\Model.p
 D:\01编程\02协作开发\福建省\FJSortedStoringForm\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
 D:\01编程\02协作开发\福建省\FJSortedStoringForm\Model\obj\Debug\Model.dll
 D:\01编程\02协作开发\福建省\FJSortedStoringForm\Model\obj\Debug\Model.pdb
+D:\02编程\2016年\01协同开发\FJSortedStoringForm\Model\bin\Debug\Model.dll
+D:\02编程\2016年\01协同开发\FJSortedStoringForm\Model\bin\Debug\Model.pdb
+D:\02编程\2016年\01协同开发\FJSortedStoringForm\Model\obj\Debug\Model.dll
+D:\02编程\2016年\01协同开发\FJSortedStoringForm\Model\obj\Debug\Model.pdb

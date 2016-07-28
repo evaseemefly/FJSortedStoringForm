@@ -2,11 +2,19 @@
 <types>
   <type>
     <code>1</code>
+    <DirName>DHB</DirName>
     <name>4号大浮标</name>
     <rule>\w+0023.dhb.xml</rule>
   </type>
   <type>
+    <code>3</code>
+    <DirName>DSB</DirName>
+    <name>牛山岛</name>
+    <rule>\w+8205.dsb.xml</rule>
+  </type>
+  <type>
     <code>2</code>
+    <DirName>DHB</DirName>
     <name>5号大浮标</name>
     <rule>\w+0024.dhb.xml</rule>
   </type>
